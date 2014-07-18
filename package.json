@@ -1,0 +1,19 @@
+{
+  "name": "nytdistricts",
+  "version": "0.0.1",
+  "description": "an npm module for the NYT districts api",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "npm",
+    "nyt",
+    "districts"
+  ],
+  "author": "Jisan Zaman",
+  "license": "ISC",
+  "dependencies": {
+    "request": "~2.37.0"
+  }
+}
