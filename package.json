@@ -1,6 +1,6 @@
 {
   "name": "nytdistricts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "an npm module for the NYT districts api",
   "main": "nytdistricts.js",
   "scripts": {
