@@ -2,7 +2,7 @@
   "name": "nytdistricts",
   "version": "0.0.1",
   "description": "an npm module for the NYT districts api",
-  "main": "app.js",
+  "main": "nytdistricts.js",
   "scripts": {
     "test": "npm test"
   },
@@ -11,7 +11,13 @@
     "nyt",
     "districts"
   ],
-  "author": "Jisan Zaman",
+  "author": {"name": "Jisan Zaman",
+            "url": "https://github.com/superjisan"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superjisan/nytdistricts"
+  },
+  "homepage": "https://github.com/superjisan/nytdistricts",
   "license": "ISC",
   "dependencies": {
     "request": "~2.37.0"
