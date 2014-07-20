@@ -57,3 +57,47 @@ NYTDistricts.prototype.getCityCouncilDistrict = function(lat, long, callback){
     }
   })
 }
+
+NYTDistricts.prototype.getStateAssemblyDistrict = function(lat, long, callback){
+  this.getDistricts(lat,long, function(err, data){
+    if (err) throw err;
+    for (var i = 0; i < data.results.length; i++){
+      if(data.results[i].level === 'State Assembly'){
+        return  callback(null, data.results[i])
+      }
+    }
+  })
+}
+
+NYTDistricts.prototype.getStateSenateDistrict = function(lat, long, callback){
+  this.getDistricts(lat,long, function(err, data){
+    if (err) throw err;
+    for (var i = 0; i < data.results.length; i++){
+      if(data.results[i].level === 'State Senate'){
+        return  callback(null, data.results[i])
+      }
+    }
+  })
+}
+
+NYTDistricts.prototype.getHouseDistrict = function(lat, long, callback){
+  this.getDistricts(lat,long, function(err, data){
+    if (err) throw err;
+    for (var i = 0; i < data.results.length; i++){
+      if(data.results[i].level === 'U.S. House'){
+        return  callback(null, data.results[i])
+      }
+    }
+  })
+}
+
+NYTDistricts.prototype.getBorough = function(lat, long, callback){
+  this.getDistricts(lat,long, function(err, data){
+    if (err) throw err;
+    for (var i = 0; i < data.results.length; i++){
+      if(data.results[i].level === 'Borough'){
+        return  callback(null, data.results[i])
+      }
+    }
+  })
+}
